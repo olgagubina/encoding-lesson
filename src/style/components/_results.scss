@@ -1,0 +1,31 @@
+%table-header {
+    direction: $direction;
+    padding: 0 20px;
+    grid-row: 1 /span 1;
+    display: flex;
+    align-items: center;
+    background-color: $table-header-background-color;
+    border-bottom: 1px solid $border-color;
+    font-family: "SpoilerHE";
+    font-weight: bold;
+    font-size: 23px;
+    color: $blue-results-font-color;
+    height: 100%;
+}
+
+.results {
+    width: $main-width;
+    height: 1000px;
+    margin: -45px auto;
+    background-color: $grey-background-color;
+    border-radius: 10px;
+
+    .results-wrap {
+        display: grid;
+        grid-template-columns: 68% 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 13px;
+    }
+}
+
+

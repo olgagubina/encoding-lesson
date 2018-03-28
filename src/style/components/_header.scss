@@ -1,0 +1,109 @@
+.header-nav {
+    margin: auto;
+    width: 100%;
+    padding-top: 15px;
+    background-color: $header-background-color;
+}
+
+.header-nav-wrap {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: auto;
+    width: $main-width;
+
+    .header-nav-left-wrap {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 50px;
+    }
+
+    .header-nav-right-wrap {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        color: $blue-header-font-color;
+        font-size: 16px;
+        height: 36px;
+        width: 280px;
+
+        .icon-search {
+            padding: 0 5px;
+            align-self: center;
+            height: 17px;
+        }
+
+        .icon-pipe {
+            padding: 0 5px;
+            align-self: center;
+            height: 14px;
+        }
+
+        .header-nav-btn-select {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            width: 180px;
+            background-color: $header-background-color;
+            border: none;
+            color: $blue-header-font-color;
+            font-size: 24px;
+            font-weight: bold;
+            font-family: "SpoilerHE";
+
+            .chair-icon {
+                padding: 0 5px 4px 7px;
+                height:$header-btn-icons-height;
+            }
+
+            .header-nav-btn-icon {
+                padding: 0 2px 5px 0;
+            }
+        }
+
+        .header-nav-btn-comp {
+            background-color:$blue-header-font-color;
+            border: none;
+            color: $grey-background-color;
+            height: 100%;
+            padding: 0 5px 1px 5px;
+            font-size: 22px;
+            font-family: "Arial";
+            text-align: center;
+            border-radius: 2px;
+        }
+    }
+}
+
+.header {
+    display: flex;
+    height: 340px;
+    width: 100%;
+    background-color: $header-background-color;
+
+    .header-text {
+        margin:auto;
+        width: 843px;
+        align-self: center;
+        text-align: center;
+        direction: $direction;
+        color: $blue-header-font-color;
+
+
+        h1 {
+            margin: 0;
+            font-size: 50px;
+            font-family: "SpoilerHE";
+        }
+
+        .header-descr {
+            font-size: 26px;
+            font-weight: bold;
+            font-family: "slick";
+        }
+    }
+}

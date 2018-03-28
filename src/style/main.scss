@@ -1,0 +1,36 @@
+@import 'variables';
+@import 'mixins';
+
+// components
+@import "components/header";
+@import "components/results";
+@import "components/results-steps";
+@import "components/results-nav";
+
+
+// fonts
+
+@include font-face("SpoilerHE",'../fonts/SpoilerHE/FbSpoiler-Lightwebfont', 100, normal);
+@include font-face("SpoilerHE", '../fonts/SpoilerHE/fbspoilersp-regularwebfont',  300, normal);
+@include font-face("SpoilerHE", '../fonts/SpoilerHE/fbspoileren-bold-webfont',    500, normal);
+
+
+@include font-face("SpoilerEN", '../fonts/SpoilerEN/enspoilerwebfont', 100, normal);
+@include font-face("SpoilerEN", '../fonts/SpoilerEN/enspoilerwebfont', 300, normal);
+@include font-face("SpoilerEN", '../fonts/SpoilerEN/enspoilerwebfont', 500, normal);
+
+@include font-face("slick", '../fonts/slick/slick', 300, normal);
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    background-color: $grey-background-color;
+}
+
+
+
+
+

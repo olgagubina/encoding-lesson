@@ -1,0 +1,61 @@
+.results-steps {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    direction: $direction;
+    height: 70px;
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+
+    .step {
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        height: 47px;
+
+        .step-icon {
+            padding: 0 0 0 5px;
+
+        }
+
+        .step-number {
+            color: $blue-results-font-color;
+            font-family: "SpoilerHE";
+            font-size: 50px;
+            font-weight: 300;
+            padding: 0 0 0 5px;
+
+        }
+
+        .step-descr {
+            color: $blue-results-font-color;
+            font-family: "SpoilerHE";
+            font-size: 18px;
+            font-weight: 300;
+            text-align: right;
+            line-height: 85%;
+            padding: 3px 0 0 0;
+            width: 142px;
+        }
+    }
+
+    .arrow {
+        align-self: center;
+        position: relative;
+        .circle-icon {
+            position: absolute;
+            left: -8px;
+        }
+
+        .arrow-icon {
+            position: absolute;
+            top: 8px;
+            left: 1px;
+        }
+
+    }
+
+}
