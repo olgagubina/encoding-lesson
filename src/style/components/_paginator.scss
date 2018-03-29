@@ -1,0 +1,12 @@
+.paginator-box {
+    @include border-style();
+    height: 32px;
+    width: 32px;
+    background-color: #fcfcfc;
+    margin: -8px 5px 356px 0;
+    font-family: SpoilerHE;
+    font-size: 22px;
+    line-height: 1;
+    font-weight: 300;
+    color: $blue-header-font-color;
+}
