@@ -1,0 +1,153 @@
+.results-items-container {
+    grid-column: 1/span 1;
+    grid-row: 2/span 1;
+    height: auto;
+
+    .result-item {
+        @include border-style();
+        margin-bottom: 14px;
+        direction: $direction;
+        width: auto;
+        height: 142px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        padding: 16px;
+        background-color: $white-background-color;
+
+        .item-logo {
+            @include border-style();
+            height: auto;
+            width: 180px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item-descr {
+            display: flex;
+            flex-flow: column nowrap;
+            width: 420px;
+            padding: 4px 21px 8px 0px;
+
+            .item-desr-title {
+                margin:0;
+                font-family: SpoilerHE;
+                font-size: 24px;
+                line-height: 1;
+                font-weight: 300;
+                color: $blue-header-font-color;
+            }
+
+            .item-desr-text {
+                margin: 8px 0;
+                font-family: SpoilerHE;
+                font-size: 16px;
+                line-height: 1;
+                font-weight: 300;
+                color: $blue-results-font-color;
+
+            }
+
+            .item-descr-last-line {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                align-items: flex-end;
+                width: 400px;
+                margin-top: 27px;
+
+                .geo-position-btn {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: space-between;
+                    border: none;
+                    background-color: inherit;
+                    width: 88px;
+                    font-family: SpoilerHE;
+                    font-size: 16px;
+                    line-height: 1;
+                    font-weight: 300;
+                    padding-right: 0;
+                    color: $blue-results-font-color;
+
+                    .btn-text {
+                        margin: 8px -3px 0 0;
+                    }
+
+                    .map-icon {
+                        margin: 5px 1px 0 0;
+                    }
+                }
+
+                .stars {
+                    margin: 25px 12px 0 10px;
+
+                    .star-icon {
+                        width: 20px;
+                        margin-right: -3px;
+                    }
+                }
+            }
+        }
+
+        .big-pipe {
+            align-self: center;
+            height: 88px;
+            margin-right: 5px;
+        }
+
+        .item-buy {
+            margin: 10px 28px 0 0;
+
+             .item-buy-sum {
+                margin: 0;
+                font-family: SpoilerHE;
+                font-size: 34px;
+                line-height: 1;
+                font-weight: 300;
+                color: $blue-header-font-color;
+
+                span {
+                    font-size: 20px;
+                }
+            }
+
+            .item-buy-text {
+                margin: -3px 0px 0 0;
+                font-family: SpoilerHE;
+                font-size: 15px;
+                line-height: 1;
+                font-weight: 300;
+                color: $blue-results-font-color;
+
+            }
+
+            .item-buy-btn {
+                margin: 7px -6px 0 0;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+                width: 122px;
+                height: 36px;
+                border-radius: 18px;
+                background-color: $header-background-color;
+                border: inherit;
+                color: $white-background-color;
+                text-align: center;
+                font-family: SpoilerHE;
+                font-size: 19px;
+                font-weight: bold;
+
+                .btn-text {
+                    margin: 0 3px 0 0;
+                }
+            }
+
+        }
+    }
+}
+
+
+

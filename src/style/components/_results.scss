@@ -24,8 +24,9 @@
     .results-wrap {
         display: grid;
         grid-template-columns: 71% 1fr;
-        grid-template-rows: auto auto;
+        grid-template-rows: 99px auto;
         grid-column-gap: 13px;
+        grid-row-gap: 14px;
     }
 }
 
