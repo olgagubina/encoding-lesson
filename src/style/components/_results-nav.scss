@@ -23,7 +23,7 @@
         justify-content: space-between;
         align-items: center;
         width:100%;
-        padding: 0 19px;
+        padding: 0 19px 0 6px;
 
         .results-nav-menu-left {
             direction: $direction;
@@ -40,7 +40,8 @@
                 color: $blue-results-font-color;
 
                 .down-icon {
-                    padding-bottom: 2px;
+                    padding: 0 5px 3px 0;
+
                 }
             }
         }

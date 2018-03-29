@@ -18,6 +18,20 @@
         justify-content: space-between;
         align-items: center;
         width: 50px;
+
+        .icon-user {
+           padding: 0 7px 2px 2px;
+        }
+
+        .icon-pipe {
+            padding: 0 0 0 2px;
+        }
+
+        .icon-letter {
+            padding: 0 0 0 12px;
+        }
+
+
     }
 
     .header-nav-right-wrap {
@@ -28,18 +42,18 @@
         color: $blue-header-font-color;
         font-size: 16px;
         height: 36px;
-        width: 280px;
+        width: 290px;
 
         .icon-search {
-            padding: 0 5px;
+            padding: 0 12px 0 0;
             align-self: center;
             height: 17px;
         }
 
         .icon-pipe {
-            padding: 0 5px;
+            padding: 1px 0 0 0;
             align-self: center;
-            height: 14px;
+            height: 13px;
         }
 
         .header-nav-btn-select {
@@ -47,21 +61,22 @@
             flex-flow: row nowrap;
             justify-content: center;
             align-items: center;
-            width: 180px;
+            width: 190px;
             background-color: $header-background-color;
             border: none;
             color: $blue-header-font-color;
             font-size: 24px;
             font-weight: bold;
             font-family: "SpoilerHE";
+            padding: 2px 0 2px 9px;
 
             .chair-icon {
-                padding: 0 5px 4px 7px;
+                padding: 1px 4px 2px 5px;
                 height:$header-btn-icons-height;
             }
 
             .header-nav-btn-icon {
-                padding: 0 2px 5px 0;
+                padding: 2px 8px 7px 0;
             }
         }
 
@@ -70,7 +85,7 @@
             border: none;
             color: $grey-background-color;
             height: 100%;
-            padding: 0 5px 1px 5px;
+            padding: 0 6px 1px 7px;
             font-size: 22px;
             font-family: "Arial";
             text-align: center;
@@ -81,13 +96,14 @@
 
 .header {
     display: flex;
-    height: 340px;
+    height: 310px;
     width: 100%;
+    padding: 0 0 65px 0;
     background-color: $header-background-color;
 
     .header-text {
-        margin:auto;
-        width: 843px;
+        margin: 0 auto;
+        width: 681px;
         align-self: center;
         text-align: center;
         direction: $direction;
@@ -96,14 +112,21 @@
 
         h1 {
             margin: 0;
-            font-size: 50px;
+            font-size: 55px;
             font-family: "SpoilerHE";
+
+            .car-icon {
+                height: 48px;
+                padding: 0 5px;
+            }
         }
 
         .header-descr {
-            font-size: 26px;
+            margin: 0;
+            font-size: 21px;
             font-weight: bold;
             font-family: "slick";
+            line-height: 1.5;
         }
     }
 }

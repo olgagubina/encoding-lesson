@@ -1,16 +1,16 @@
 .results-steps {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-end;
     direction: $direction;
-    height: 70px;
+    height: 78px;
     width: 100%;
-    padding: 0 10px;
-    margin-bottom: 20px;
+    padding: 20px 30px 13px 0 ;
+
 
     .step {
-        display:flex;
+        display:inline-flex;
         flex-flow: row nowrap;
         justify-content: space-between;
         align-items: center;
@@ -26,7 +26,7 @@
             font-family: "SpoilerHE";
             font-size: 50px;
             font-weight: 300;
-            padding: 0 0 0 5px;
+            padding: 0 0 2px 3px;
 
         }
 
@@ -38,24 +38,42 @@
             text-align: right;
             line-height: 85%;
             padding: 3px 0 0 0;
-            width: 142px;
+            width: 138px;
+        }
+
+        .descr-1 {
+            width: 109px;
+        }
+
+        .descr-2 {
+            width: 185px;
+        }
+
+        .descr-3 {
+            width: 150px;
+        }
+
+        .descr-4 {
+            width: 131px;
         }
     }
 
     .arrow {
         align-self: center;
         position: relative;
+        width: 25px;
+        height: 25px;
+
+
         .circle-icon {
             position: absolute;
-            left: -8px;
         }
 
         .arrow-icon {
             position: absolute;
             top: 8px;
-            left: 1px;
+            left: 6px;
         }
-
     }
 
 }
