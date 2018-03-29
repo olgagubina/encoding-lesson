@@ -1,9 +1,10 @@
 .results-nav-container {
+    grid-column: 1/span 1;
     display:grid;
-    grid-template-rows: 55% auto;
+    grid-template-rows: 56px auto;
     grid-template-columns: 1fr;
     align-items: center;
-    height: 100px;
+    height: 101px;
     @include border-style();
 
 
@@ -23,7 +24,9 @@
         justify-content: space-between;
         align-items: center;
         width:100%;
+        height: 40px;
         padding: 0 19px 0 6px;
+        background-color: $white-background-color;
 
         .results-nav-menu-left {
             direction: $direction;

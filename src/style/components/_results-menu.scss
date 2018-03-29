@@ -1,0 +1,121 @@
+.results-menu-container {
+    grid-column: 2/span 1;
+    grid-row: 1/span 2;
+    display:grid;
+    grid-template-rows: 56px auto;
+    grid-template-columns: 1fr;
+    align-items: start;
+    justify-items: center;
+    height: 931px;
+    width: 307px;
+    @include border-style();
+
+    .results-menu-header {
+        @extend %table-header;
+
+        .results-menu-header-text {
+            margin: 0;
+            height: auto;
+        }
+    }
+
+    .results-menu-body {
+        direction: $direction;
+        padding: 17px;
+        background-color: $white-background-color;
+
+        .instruction {
+            width: 245px;
+            margin:0 0 20px 0;
+            color: $blue-results-font-color;
+            font-family: "SpoilerHE";
+            font-size: 17px;
+            font-weight: 300;
+            line-height: 1;
+        }
+
+        .brake {
+            margin: 0 0 16px 0;
+        }
+
+        .results-menu-btn {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            width: 267px;
+            height: 38px;
+            padding-right: 15px;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            background-color: inherit;
+            border: solid 1px $border-color;
+
+            .btn-text {
+                width: 231px;
+                margin: auto 0;
+                color: $blue-results-font-color;
+                font-family: "SpoilerHE";
+                font-size: 17px;
+                font-weight: 300;
+                line-height: 1;
+                text-align: right;
+
+            }
+        }
+
+        .last-menu-btn {
+            margin-bottom: 16px;
+        }
+
+        .results-menu-question {
+            height: auto;
+            width: 267px;
+            margin-bottom: 16px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+
+            .question-text {
+                width: 163px;
+                margin:0;
+                color: $blue-results-font-color;
+                font-family: "SpoilerHE";
+                font-size: 17px;
+                font-weight: 300;
+                line-height: 1;
+            }
+
+            .btn-group-wrap {
+                .squere-btn {
+                    height:38px;
+                    width: 38px;
+                    margin-right: 3px;
+                    border-radius: 3px;
+                    background-color: inherit;
+                    border: solid 1px $border-color;
+                    color: $blue-results-font-color;
+                    font-family: "SpoilerHE";
+                    font-size: 17px;
+                    font-weight: 300;
+                    line-height: 1;
+                }
+            }
+
+        }
+
+        .results-menu-confirm-btn {
+            width: 267px;
+            height: 48px;
+            border: inherit;
+            border-radius: 24px;
+            background-color: $header-background-color;
+            color: $white-background-color;
+            text-align: center;
+            font-family: SpoilerHE;
+            font-size: 19px;
+            font-weight: bold;
+        }
+    }
+}
