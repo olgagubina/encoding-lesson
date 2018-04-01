@@ -105,7 +105,6 @@
             </div>
 
 
-
             <div class="item results-nav-menu">
 
                 <div class="results-nav-menu-left">
@@ -151,10 +150,23 @@
 
                 <img class="brake" src="img/break.png">
 
-                <button id="btn-type-search" class="results-menu-btn">
-                    <p class="btn-text">בחר את סוג </p>
-                    <img class="btn-icon arrow-icon" src="img/light_down.png">
-                </button>
+                <div id="container-type-search" class="container-search">
+
+                    <button id="btn-type-search" class="results-menu-btn">
+                        <p class="btn-text" data-title="בחר את סוג">בחר את סוג </p>
+                        <img class="btn-icon arrow-icon" src="img/light_down.png">
+                    </button>
+
+
+                    <ul id="list-type-search" class="search-options-list">
+                        <li class="list-item">אופציה 1</li>
+                        <li class="list-item">אופציה 2</li>
+                        <li class="list-item">אופציה 3</li>
+                        <li class="clear-list-item">שום דבר</li>
+                    </ul>
+
+                </div>
+
 
                 <button class="results-menu-btn">
                     <p class="btn-text">תאריך תחילת הביטוח</p>
@@ -171,17 +183,39 @@
                     <img class="btn-icon plus-icon" src="img/plus.png">
                 </button>
 
-                <button class="results-menu-btn">
-                    <p class="btn-text">מטרת השימוש ברכב</p>
-                    <img class="btn-icon arrow-icon" src="img/light_down.png">
-                </button>
+                <div id="container-goal-search" class="container-search">
 
-                <button class="results-menu-btn last-menu-btn">
-                    <p class="btn-text">היכן אתה גר?</p>
-                    <img class="btn-icon arrow-icon" src="img/light_down.png">
-                </button>
+                    <button id="btn-goal-search" class="results-menu-btn">
+                        <p class="btn-text" data-title="מטרת השימוש ברכב">מטרת השימוש ברכב</p>
+                        <img class="btn-icon arrow-icon" src="img/light_down.png">
+                    </button>
 
-                <img class="brake" src="img/break.png">
+                    <ul id="list-goal-search" class="search-options-list">
+                        <li class="list-item">אופציה 1</li>
+                        <li class="list-item">אופציה 2</li>
+                        <li class="list-item">אופציה 3</li>
+                        <li class="clear-list-item">שום דבר</li>
+                    </ul>
+
+                </div>
+
+                <div id="container-homeplace-search" class="container-search">
+
+                    <button id="btn-homeplace-search" class="results-menu-btn">
+                        <p class="btn-text" data-title="היכן אתה גר?">היכן אתה גר?</p>
+                        <img class="btn-icon arrow-icon" src="img/light_down.png">
+                    </button>
+
+                        <ul id="list-homeplace-search" class="search-options-list">
+                            <li  class="list-item">אופציה 1</li>
+                            <li  class="list-item">אופציה 2</li>
+                            <li  class="list-item">אופציה 3</li>
+                            <li  class="clear-list-item">שום דבר</li>
+                        </ul>
+
+                </div>
+
+                <img class="brake after-last-btn" src="img/break.png">
 
                 <div class="results-menu-question q-1">
                     <p class="question-text">האם היה לך ביטוח מקיף או רכב ליסינג ב-3 שנים האחרונות?</p>

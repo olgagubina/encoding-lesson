@@ -1,5 +1,6 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const webpack = require("webpack");
 const path = require('path');
 
 module.exports = {
@@ -43,6 +44,11 @@ module.exports = {
                 loader: 'url-loader?limit=100000' }
         ]
     },
+    resolve: {
+        alias: {
+            jquery: "jquery/src/jquery"
+        }
+    },
     plugins: [
         new HtmlWebPackPlugin({
             template: "./src/index.html",
@@ -51,6 +57,10 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: "[name].css",
             chunkFilename: "[id].css"
+        }),
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery"
         })
     ]
 };
