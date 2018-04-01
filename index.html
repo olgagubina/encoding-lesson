@@ -10,6 +10,8 @@
 </head>
 <body>
 
+<!--HEADER-->
+
 <nav class="header-nav">
 
     <div class="header-nav-wrap">
@@ -41,8 +43,11 @@
 </section>
 
 
+<!--RESULTS-->
+
 <section class="results">
 
+    <!-- RESULTS-STEPS-HEADER -->
 
     <section class="results-steps">
 
@@ -88,9 +93,11 @@
     </section>
 
 
+    <!-- RESULTS-BODY -->
+
     <section class="results-wrap">
 
-        <!--Column 1-->
+        <!-- RESULTS-SORTING-MENU Column 1 -->
         <nav class="results-nav-container">
 
             <div class="item results-nav-message">
@@ -128,7 +135,9 @@
             </div>
         </nav>
 
-        <!--Column 2-->
+
+        <!-- RESULTS-FILTER-MENU Column 2-->
+
         <section class="results-menu-container">
 
             <div class="results-menu-header">
@@ -176,50 +185,95 @@
 
                 <div class="results-menu-question q-1">
                     <p class="question-text">האם היה לך ביטוח מקיף או רכב ליסינג ב-3 שנים האחרונות?</p>
-                    <div class="btn-group-wrap">
-                        <button class="squere-btn">כן</button>
-                        <button class="squere-btn">לא</button>
-                    </div>
+
+                    <form class="btn-group-wrap">
+                        <label class="container">
+                            <input type="radio" name="option" class="squere-btn btn-yes" checked="checked">
+                            <span class="checkmark">כן</span>
+                        </label>
+
+                        <label class="container">
+                            <input type="radio" name="option" class="squere-btn btn-no" >
+                            <span class="checkmark">לא</span>
+                        </label>
+                    </form>
+
                 </div>
 
                 <img class="brake" src="src/img/break.png">
 
                 <div class="results-menu-question q-2">
                     <p class="question-text">האם היו לך תביעות רכוש ו/או גוף ב-3 שנים </p>
-                    <div class="btn-group-wrap">
-                        <button class="squere-btn">כן</button>
-                        <button class="squere-btn">לא</button>
-                    </div>
+
+                    <form class="btn-group-wrap">
+                        <label class="container">
+                            <input type="radio" name="option" class="squere-btn btn-yes" checked="checked">
+                            <span class="checkmark">כן</span>
+                        </label>
+
+                        <label class="container">
+                            <input type="radio" name="option" class="squere-btn btn-no" >
+                            <span class="checkmark">לא</span>
+                        </label>
+                    </form>
+
                 </div>
 
                 <img class="brake" src="src/img/break.png">
 
                 <div class="results-menu-question q-3">
                     <p class="question-text">האם לבן הזוג יש רכב נוסף?</p>
-                    <div class="btn-group-wrap">
-                        <button class="squere-btn">כן</button>
-                        <button class="squere-btn">לא</button>
-                    </div>
+
+                    <form class="btn-group-wrap">
+                        <label class="container">
+                            <input type="radio" name="option" class="squere-btn btn-yes" checked="checked">
+                            <span class="checkmark">כן</span>
+                        </label>
+
+                        <label class="container">
+                            <input type="radio" name="option" class="squere-btn btn-no" >
+                            <span class="checkmark">לא</span>
+                        </label>
+                    </form>
+
                 </div>
 
                 <img class="brake" src="src/img/break.png">
 
                 <div class="results-menu-question q-4">
                     <p class="question-text">האם יש לך עבר פלילי?</p>
-                    <div class="btn-group-wrap">
-                        <button class="squere-btn">כן</button>
-                        <button class="squere-btn">לא</button>
-                    </div>
+
+                    <form class="btn-group-wrap">
+                        <label class="container">
+                            <input type="radio" name="option" class="squere-btn btn-yes" checked="checked">
+                            <span class="checkmark">כן</span>
+                        </label>
+
+                        <label class="container">
+                            <input type="radio" name="option" class="squere-btn btn-no" >
+                            <span class="checkmark">לא</span>
+                        </label>
+                    </form>
+
                 </div>
 
                 <img class="brake" src="src/img/break.png">
 
                 <div class="results-menu-question q-5">
                     <p class="question-text">האם שללו לך את הרישיון בעבר?</p>
-                    <div class="btn-group-wrap">
-                        <button class="squere-btn">כן</button>
-                        <button class="squere-btn">לא</button>
-                    </div>
+
+                    <form class="btn-group-wrap">
+                        <label class="container">
+                            <input type="radio" name="option" class="squere-btn btn-yes" checked="checked">
+                            <span class="checkmark">כן</span>
+                        </label>
+
+                        <label class="container">
+                            <input type="radio" name="option" class="squere-btn btn-no" >
+                            <span class="checkmark">לא</span>
+                        </label>
+                    </form>
+
                 </div>
 
                 <img class="brake" src="src/img/break.png">
@@ -230,6 +284,9 @@
 
         </section>
 
+
+        <!-- RESULTS-ITEMS -->
+
         <section class="results-items-container">
 
             <div class="result-item">
@@ -239,7 +296,7 @@
                 </div>
 
                 <div class="item-descr">
-                    <p class="item-desr-title">אלמוג יצחקי סוכנות אלמוגים</p>
+                    <h3 class="item-desr-title">אלמוג יצחקי סוכנות אלמוגים</h3>
                     <p class="item-desr-text">"ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה.</p>
                     <div class="item-descr-last-line">
                         <button class="geo-position-btn">
@@ -276,7 +333,7 @@
                 </div>
 
                 <div class="item-descr">
-                    <p class="item-desr-title">אלמוג יצחקי סוכנות אלמוגים</p>
+                    <h3 class="item-desr-title">אלמוג יצחקי סוכנות אלמוגים</h3>
                     <p class="item-desr-text">"ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה.</p>
                     <div class="item-descr-last-line">
                         <button class="geo-position-btn">
@@ -313,7 +370,7 @@
                 </div>
 
                 <div class="item-descr">
-                    <p class="item-desr-title">אלמוג יצחקי סוכנות אלמוגים</p>
+                    <h3 class="item-desr-title">אלמוג יצחקי סוכנות אלמוגים</h3>
                     <p class="item-desr-text">"ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה.</p>
                     <div class="item-descr-last-line">
                         <button class="geo-position-btn">
@@ -350,7 +407,7 @@
                 </div>
 
                 <div class="item-descr">
-                    <p class="item-desr-title">אלמוג יצחקי סוכנות אלמוגים</p>
+                    <h3 class="item-desr-title">אלמוג יצחקי סוכנות אלמוגים</h3>
                     <p class="item-desr-text">"ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה.</p>
                     <div class="item-descr-last-line">
                         <button class="geo-position-btn">
@@ -387,7 +444,7 @@
                 </div>
 
                 <div class="item-descr">
-                    <p class="item-desr-title">אלמוג יצחקי סוכנות אלמוגים</p>
+                    <h3 class="item-desr-title">אלמוג יצחקי סוכנות אלמוגים</h3>
                     <p class="item-desr-text">"ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה.</p>
                     <div class="item-descr-last-line">
                         <button class="geo-position-btn">
@@ -424,7 +481,7 @@
                 </div>
 
                 <div class="item-descr">
-                    <p class="item-desr-title">אלמוג יצחקי סוכנות אלמוגים</p>
+                    <h3 class="item-desr-title">אלמוג יצחקי סוכנות אלמוגים</h3>
                     <p class="item-desr-text">"ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה.</p>
                     <div class="item-descr-last-line">
                         <button class="geo-position-btn">
@@ -461,7 +518,7 @@
                 </div>
 
                 <div class="item-descr">
-                    <p class="item-desr-title">אלמוג יצחקי סוכנות אלמוגים</p>
+                    <h3 class="item-desr-title">אלמוג יצחקי סוכנות אלמוגים</h3>
                     <p class="item-desr-text">"ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה.</p>
                     <div class="item-descr-last-line">
                         <button class="geo-position-btn">
@@ -498,7 +555,7 @@
                 </div>
 
                 <div class="item-descr">
-                    <p class="item-desr-title">אלמוג יצחקי סוכנות אלמוגים</p>
+                    <h3 class="item-desr-title">אלמוג יצחקי סוכנות אלמוגים</h3>
                     <p class="item-desr-text">"ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה.</p>
                     <div class="item-descr-last-line">
                         <button class="geo-position-btn">
@@ -535,7 +592,7 @@
                 </div>
 
                 <div class="item-descr">
-                    <p class="item-desr-title">אלמוג יצחקי סוכנות אלמוגים</p>
+                    <h3 class="item-desr-title">אלמוג יצחקי סוכנות אלמוגים</h3>
                     <p class="item-desr-text">"ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה.</p>
                     <div class="item-descr-last-line">
                         <button class="geo-position-btn">
@@ -572,7 +629,7 @@
                 </div>
 
                 <div class="item-descr">
-                    <p class="item-desr-title">אלמוג יצחקי סוכנות אלמוגים</p>
+                    <h3 class="item-desr-title">אלמוג יצחקי סוכנות אלמוגים</h3>
                     <p class="item-desr-text">"ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה.</p>
                     <div class="item-descr-last-line">
                         <button class="geo-position-btn">
@@ -599,10 +656,13 @@
                         <p class="btn-text">לרכישה</p>
                     </button>
                 </div>
-
             </div>
 
         </section>
+
+    </section>
+
+        <!--PAGINATOR-->
 
         <section class="paginator">
 
@@ -620,9 +680,9 @@
 
         </section>
 
-    </section>
-
 </section>
+
+<!--FOOTER-->
 
 <footer>
 
@@ -639,16 +699,16 @@
 
                 <div class="footer-menu-login">
                     <p class="footer-menu-title">סוכנים</p>
-                    <p class="footer-menu-text">הרשמה למערחת</p>
-                    <p class="footer-menu-text">צור קשר</p>
+                    <p class="footer-menu-text"><a>הרשמה למערחת</a></p>
+                    <p  class="footer-menu-text"><a>צור קשר</a></p>
                     <button class="footer-enter-btn">כניסה סוכנים</button>
                 </div>
 
                 <div class="footer-menu-conditions">
                     <p class="footer-menu-title">פרטחם חשובים</p>
-                    <p class="footer-menu-text">תנאי שימוש</p>
-                    <p class="footer-menu-text">מדיניות פרטיות</p>
-                    <p class="footer-menu-text">צור קשר</p>
+                    <p class="footer-menu-text"><a>תנאי שימוש</a></p>
+                    <p class="footer-menu-text"><a>מדיניות פרטיות</a></p>
+                    <p class="footer-menu-text"><a>צור קשר</a></p>
                 </div>
 
                 <div class="footer-menu-sm">
@@ -656,17 +716,17 @@
 
                     <button class="footer-sm-btn">
                         <img class="sm-icon" src="src/img/facebook.png">
-                        <p class="sm-text footer-menu-text">פייסבוק</p>
+                        <a class="sm-text footer-menu-text">פייסבוק</a>
                     </button>
 
                     <button class="footer-sm-btn">
                         <img class="sm-icon" src="src/img/twitter.png">
-                        <p class="sm-text footer-menu-text">טוויטר</p>
+                        <a class="sm-text footer-menu-text">טוויטר</a>
                     </button>
 
                     <button class="footer-sm-btn">
                         <img class="sm-icon" src="src/img/google.png">
-                        <p class="sm-text footer-menu-text">גוגל פלוס</p>
+                        <a class="sm-text footer-menu-text">גוגל פלוס</a>
                     </button>
                 </div>
 
@@ -675,7 +735,7 @@
             <div class="footer-menu-contacts">
                 <p class="footer-menu-title">השאר מעודכן</p>
                 <p class="footer-menu-text">הירשם לרשימת התפוצה שלנו נדאג לעדכן אותך בכל המידע החשוב.</p>
-                <button class="footer-mail-btn">כתובת הדוא"ל שלך</button>
+                <input type="text" name="e-mail" value="כתובת הדוא``ל שלך" class="footer-mail-input">
             </div>
 
         </div>
@@ -684,7 +744,7 @@
     <div class="footer-copyright-container">
         <div class="footer-copyright">
             <p class="copyright-left">כל הזבויות שמורות</p>
-            <p class="copyright-right">UI & DESIGN BY: <span>AVIOZ</span></p>
+            <p class="copyright-right">UI & DESIGN BY: <a><span>AVIOZ</span></a></p>
         </div>
     </div>
 

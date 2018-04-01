@@ -35,6 +35,14 @@ body, html {
     background-color: $grey-background-color;
 }
 
+button {
+    outline: inherit;
+    cursor: pointer;
+}
+
+a{
+    cursor: pointer;
+}
 
 
 

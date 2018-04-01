@@ -88,7 +88,43 @@
             }
 
             .btn-group-wrap {
-                .squere-btn {
+
+                .container {
+                    position: relative;
+                    display: inline-block;
+                    height:38px;
+                    width: 38px;
+                    margin-right: 3px;
+                    font-family: "SpoilerHE";
+                    font-size: 17px;
+                    font-weight: 300;
+                    line-height: 1;
+                    text-align: center;
+                    padding-top: 8px;
+                    cursor: pointer;
+                }
+
+                .container {
+
+                    input {
+                        position: absolute;
+                        opacity: 0;
+
+                        &:checked ~ .checkmark {
+                            border: solid 1px $buy-button-color;
+                        }
+                    }
+
+                    &:hover input ~ .checkmark {
+                        background-color: $grey-stars-color;
+                    }
+
+                }
+
+                .checkmark {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
                     height:38px;
                     width: 38px;
                     margin-right: 3px;
@@ -100,6 +136,8 @@
                     font-size: 17px;
                     font-weight: 300;
                     line-height: 1;
+                    text-align: center;
+                    padding-top: 8px;
                 }
             }
 
@@ -110,12 +148,24 @@
             height: 48px;
             border: inherit;
             border-radius: 24px;
-            background-color: $header-background-color;
+            background-color: $buy-button-color;
             color: $white-background-color;
             text-align: center;
             font-family: SpoilerHE;
             font-size: 19px;
             font-weight: bold;
+
+            &:hover {
+                background-color: $red-hover-color;
+                -moz-transition: all 0.2s  ease-in;
+                /* WebKit */
+                -webkit-transition: all 0.2s  ease-in;
+                /* Opera */
+                -o-transition: all 0.2s  ease-in;
+                /* Standard */
+                transition: all 0.2s ease-in;
+            }
+
         }
     }
 }

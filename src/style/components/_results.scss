@@ -21,6 +21,30 @@
     background-color: $grey-background-color;
     border-radius: 10px;
 
+    &:before {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        left: 0;
+        top: 336px;
+        width: 369px;
+        height: 25px;
+        background-color: $header-background-color;
+        border-bottom-right-radius: 10px;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        left: 79.94%;
+        top: 336px;
+        width: 20.05%;
+        height: 25px;
+        background-color: $header-background-color;
+        border-bottom-left-radius: 10px;
+    }
+
     .results-wrap {
         display: grid;
         grid-template-columns: 71% 1fr;

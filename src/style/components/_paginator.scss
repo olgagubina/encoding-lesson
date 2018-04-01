@@ -9,4 +9,8 @@
     line-height: 1;
     font-weight: 300;
     color: $blue-header-font-color;
+
+    &:hover {
+        background-color: $grey-stars-color;
+    }
 }

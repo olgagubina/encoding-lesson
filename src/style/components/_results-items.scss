@@ -132,13 +132,24 @@
                 width: 122px;
                 height: 36px;
                 border-radius: 18px;
-                background-color: $header-background-color;
+                background-color: $buy-button-color;
                 border: inherit;
                 color: $white-background-color;
                 text-align: center;
                 font-family: SpoilerHE;
                 font-size: 19px;
                 font-weight: bold;
+
+                &:hover {
+                    background-color: $red-hover-color;
+                    -moz-transition: all 0.2s ease-in;
+                    /* WebKit */
+                    -webkit-transition: all 0.2s ease-in;
+                    /* Opera */
+                    -o-transition: all 0.2s ease-in;
+                    /* Standard */
+                    transition: all 0.2s ease-in;
+                }
 
                 .btn-text {
                     margin: 0 3px 0 0;
