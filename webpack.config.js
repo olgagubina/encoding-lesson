@@ -1,76 +1,56 @@
-const webpack = require('webpack');
+const HtmlWebPackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const PurifyCSSPlugin = require('purifycss-webpack');
-const glob = require('glob');
 
 module.exports = {
-
-    entry: {
-        app: './src/js/index.js'
-    },
-
-    output: {
-        path: path.resolve(__dirname, './dist'),
-        filename: '[name].js',
-    },
-
     module: {
-
         rules: [
-            {
-                test: /\.scss$/,
-                use: [{
-                    loader: "style-loader"
-                }, {
-                    loader: "css-loader", options: {
-                        sourceMap: true
-                    }
-                }, {
-                    loader: "sass-loader", options: {
-                        sourceMap: true
-                    }
-                }]
-            },
-
-
-            {
-
-                test: /\.css$/,
-                use: ['style-loader', 'css-loader']
-
-            },
-
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                loader: 'babel-loader'
+                use: {
+                    loader: "babel-loader"
+                }
             },
+            {
+                test: /\.html$/,
+                use: [
+                    {
+                        loader: "html-loader",
+                        options: { minimize: true }
+                    }
+                ]
+            },
+            {
+                test: /\.scss$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    "css-loader",
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            sourceMap: true,
+                            config: {
+                                path: path.resolve(__dirname, './postcss.config.js'),
+                            },
+                        },
+                    },
+                    "sass-loader"
+                ]
+            },
+
             { test: /\.(png|woff|woff2|eot|ttf|svg)$/,
                 loader: 'url-loader?limit=100000' }
-
         ]
     },
-
-    devServer: {
-        contentBase: path.join(__dirname, "./"),
-        port: 9000
-    },
-
     plugins: [
-
-        new ExtractTextPlugin("styles.css"),
-        new PurifyCSSPlugin({
-            // Give paths to parse for rules. These should be absolute!
-            paths: glob.sync(path.join(__dirname, 'index.html')),
+        new HtmlWebPackPlugin({
+            template: "./src/index.html",
+            filename: "./index.html"
         }),
-        // new CleanWebpackPlugin(['dist']),
-        new HtmlWebpackPlugin({
-            // title: 'Hot Module Replacement'
-            template: './index.html',
-        }),
-        new webpack.HotModuleReplacementPlugin()
-
+        new MiniCssExtractPlugin({
+            filename: "[name].css",
+            chunkFilename: "[id].css"
+        })
     ]
 };
