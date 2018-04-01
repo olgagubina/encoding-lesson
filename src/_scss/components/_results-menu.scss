@@ -64,8 +64,44 @@
             }
         }
 
-        .last-menu-btn {
-            margin-bottom: 16px;
+        .container-search {
+
+                .search-options-list {
+                    display: none;
+                    width: 267px;
+                    margin: -12px 0 10px 0;
+                    border-bottom-right-radius: 3px;
+                    border-bottom-left-radius: 3px;
+                    background-color: $white-background-color;
+                    border: solid 1px $border-color;
+                    padding-right: 15px;
+                    color: $blue-results-font-color;
+                    font-family: "SpoilerHE";
+                    font-size: 17px;
+                    font-weight: 300;
+                    line-height: 1;
+                    text-align: right;
+                    list-style-type: none;
+
+                    .list-item, .clear-list-item {
+                        cursor: pointer;
+
+                        &:hover {
+                            color: $red-font-color;
+                            -moz-transition: all 0.2s  ease-in;
+                            /* WebKit */
+                            -webkit-transition: all 0.2s  ease-in;
+                            /* Opera */
+                            -o-transition: all 0.2s  ease-in;
+                            /* Standard */
+                            transition: all 0.2s ease-in;
+                        }
+                    }
+                }
+        }
+
+        .after-last-btn {
+            margin-top: 16px;
         }
 
         .results-menu-question {

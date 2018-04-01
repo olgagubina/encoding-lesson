@@ -18,6 +18,7 @@
 
         .step-icon {
             padding: 0 0 0 5px;
+            cursor: inherit;
 
         }
 
@@ -67,9 +68,11 @@
 
         .circle-icon {
             position: absolute;
+            cursor: inherit;
         }
 
         .arrow-icon {
+            cursor: inherit;
             position: absolute;
             top: 8px;
             left: 6px;
