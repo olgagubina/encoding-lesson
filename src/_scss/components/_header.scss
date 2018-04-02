@@ -80,6 +80,7 @@
 
                 #header-search-input {
                     display: none;
+                    width: 0;
                 }
             }
         }
@@ -106,14 +107,14 @@
             #header-search-input {
                 display: none;
                 direction: $direction;
-                width: 280px;
+                width: 0px;
                 border: inherit;
                 outline: inherit;
                 font-size: 16px;
                 font-family: "Arial";
                 text-align: right;
                 color: $blue-menu-font-color;
-                padding: 0 10px 1px 7px;
+                //padding: 0 10px 1px 7px;
             }
         }
 
