@@ -49,6 +49,10 @@ module.exports = {
             jquery: "jquery/src/jquery"
         }
     },
+    // devServer: {
+    //         contentBase: path.join(__dirname, "./"),
+    //         port: 9000
+    // },
     plugins: [
         new HtmlWebPackPlugin({
             template: "./src/index.html",

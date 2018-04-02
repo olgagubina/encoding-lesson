@@ -15,6 +15,17 @@
         padding: 16px;
         background-color: $white-background-color;
 
+        &:hover {
+            background-color: $blue-hover-background;
+            -moz-transition: all 0.3s;
+            /* WebKit */
+            -webkit-transition: all 0.3s;
+            /* Opera */
+            -o-transition: all 0.3s;
+            /* Standard */
+            transition: all 0.3s;
+        }
+
         .item-logo {
             @include border-style();
             height: auto;
@@ -22,6 +33,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            background-color:  $white-background-color;
         }
 
         .item-descr {
@@ -37,6 +49,18 @@
                 line-height: 1;
                 font-weight: 300;
                 color: $blue-header-font-color;
+                cursor: pointer;
+
+                &:hover {
+                    color: $red-hover-color;
+                    -moz-transition: all 0.2s;
+                    /* WebKit */
+                    -webkit-transition: all 0.2s;
+                    /* Opera */
+                    -o-transition: all 0.2s;
+                    /* Standard */
+                    transition: all 0.2s;
+                }
             }
 
             .item-desr-text {
@@ -142,13 +166,13 @@
 
                 &:hover {
                     background-color: $red-hover-color;
-                    -moz-transition: all 0.2s ease-in;
+                    -moz-transition: all 0.3s;
                     /* WebKit */
-                    -webkit-transition: all 0.2s ease-in;
+                    -webkit-transition: all 0.3s;
                     /* Opera */
-                    -o-transition: all 0.2s ease-in;
+                    -o-transition: all 0.3s;
                     /* Standard */
-                    transition: all 0.2s ease-in;
+                    transition: all 0.3s;
                 }
 
                 .btn-text {

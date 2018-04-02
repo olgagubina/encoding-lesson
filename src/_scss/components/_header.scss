@@ -35,25 +35,111 @@
     }
 
     .header-nav-right-wrap {
+        //position: relative;
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
         color: $blue-header-font-color;
         font-size: 16px;
         height: 36px;
-        width: 290px;
+        width: 1000px;
+
+        #search-check {
+            z-index: -100;
+
+            &:checked ~ .search-input-container {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                align-items: center;
+                width: 500px;
+                height: 34px;
+                padding: 0 10px 0 15px;
+                background-color: $white-background-color;
+                border: none;
+                border-radius: 24px;
+
+                #header-search-input {
+                    display: inline-block;
+                }
+            }
+
+            &:not(:checked) ~ .search-input-container {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                align-items: center;
+                width: 4%;
+                height: 34px;
+                padding: 0 10px 0 15px;
+                background-color: $header-background-color;
+                border: none;
+                border-radius: 24px;
+
+                -webkit-transition: all .4s ease;
+                -moz-transition: all .4s ease;
+                transition: all .4s ease;
+
+                #header-search-input {
+                    display: none;
+                    direction: $direction;
+                    width: 53%;
+                    border: inherit;
+                    outline: inherit;
+                    font-size: 16px;
+                    font-family: "Arial";
+                    text-align: right;
+                    color: $blue-menu-font-color;
+                    padding: 0 10px 1px 7px;
+                }
+            }
+        }
+
+
+        .search-input-container {
+            float:left;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            width: 30px;
+            height: 34px;
+            padding: 0 10px 0 15px;
+            margin-right: 10px;
+            background-color: $header-background-color;
+            border: none;
+            border-radius: 24px;
+
+            -webkit-transition: all .4s ease;
+            -moz-transition: all .4s ease;
+            transition: all.4s ease;
+
+            #header-search-input {
+                display: none;
+                direction: $direction;
+                width: 280px;
+                border: inherit;
+                outline: inherit;
+                font-size: 16px;
+                font-family: "Arial";
+                text-align: right;
+                color: $blue-menu-font-color;
+                padding: 0 10px 1px 7px;
+            }
+        }
+
 
         .icon-search {
-            padding: 0 12px 0 0;
+            margin: 0 15px 0 0;
             align-self: center;
             height: 17px;
         }
 
         .icon-pipe {
-            padding: 1px 0 0 0;
+            margin: 3px -24px 0 0;
             align-self: center;
-            height: 13px;
+            height: 12px;
         }
 
         .header-nav-btn-select {
@@ -68,7 +154,7 @@
             font-size: 24px;
             font-weight: bold;
             font-family: "SpoilerHE";
-            padding: 2px 0 2px 9px;
+            padding: 2px 0 2px 0;
 
             transition:all 0.2s linear;
             display:inline;
@@ -79,16 +165,29 @@
             background-position:70% 80%;;
 
             &:hover{
-                background-size:70% 2px;
+                background-size:65% 2px;
             }
 
-            .chair-icon {
-                padding: 1px 4px 2px 5px;
-                height:$header-btn-icons-height;
-            }
+            .header-nav-btn-text {
+                position: relative;
+                margin: 4px 0 0 0;
+                padding: 0;
+                display: inline-block;
+                width: 100%;
 
-            .header-nav-btn-icon {
-                padding: 2px 8px 7px 0;
+                .chair-icon {
+                    display: inline-block;
+                    position: absolute;
+                    padding: 3px 0 0 0;
+                    bottom: 2px;
+                    left: 150px;
+                    height:$header-btn-icons-height;
+                }
+
+                .header-nav-btn-icon {
+                    margin: 4px 3px 7px 0;
+                }
+
             }
         }
 

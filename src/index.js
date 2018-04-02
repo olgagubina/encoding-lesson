@@ -27,3 +27,15 @@ $(".clear-list-item").on("click", function() {
     $(this).closest('ul').siblings('button').find('p')[0].innerHTML =  $(this).closest('ul').siblings('button').find('p').data('title');
     $(this).closest('ul').siblings('button').css('border-color', '#d9e4ea');$(this).closest('ul').toggle();
 });
+
+// //Binding event on search button
+// $('.icon-search').on("click", function() {
+//     $('#header-search-toggle').toggle;
+//     //Binding event on search
+//
+// });
+//
+// $('#search-btn').on("click", function() {
+//     //function of search
+//     $('#header-search-toggle').toggle();
+// });

@@ -5,10 +5,12 @@
     grid-template-rows: 56px auto;
     grid-template-columns: 1fr;
     align-items: start;
-    justify-items: center;
-    height: 931px;
+    justify-items: start;
+    height: 945px;
     width: 307px;
     @include border-style();
+
+
 
     .results-menu-header {
         @extend %table-header;
@@ -21,6 +23,7 @@
 
     .results-menu-body {
         direction: $direction;
+        width: 305px;
         padding: 17px;
         background-color: $white-background-color;
 
@@ -51,6 +54,10 @@
             background-color: inherit;
             border: solid 1px $border-color;
 
+            &:hover {
+                background-color: $blue-hover-background;
+            }
+
             .btn-text {
                 width: 231px;
                 margin: auto 0;
@@ -65,15 +72,21 @@
         }
 
         .container-search {
+            position: relative;
 
                 .search-options-list {
+                    position:absolute;
+                    z-index: 100;
+                    opacity: 1;
                     display: none;
                     width: 267px;
+                    padding: 5px 0;
                     margin: -12px 0 10px 0;
                     border-bottom-right-radius: 3px;
                     border-bottom-left-radius: 3px;
                     background-color: $white-background-color;
                     border: solid 1px $border-color;
+                    box-shadow: 0 0 4px $border-color;
                     padding-right: 15px;
                     color: $blue-results-font-color;
                     font-family: "SpoilerHE";
@@ -85,6 +98,7 @@
 
                     .list-item, .clear-list-item {
                         cursor: pointer;
+                        padding: 5px 0;
 
                         &:hover {
                             color: $red-font-color;
@@ -98,6 +112,15 @@
                         }
                     }
                 }
+
+            hr {
+                margin: 5px 0;
+                width: 235px;
+                border: none;
+                color: $border-color;
+                background-color: $border-color;
+                height: 1px;
+            }
         }
 
         .after-last-btn {
@@ -152,7 +175,7 @@
                     }
 
                     &:hover input ~ .checkmark {
-                        background-color: $grey-stars-color;
+                        background-color: $blue-hover-background;
                     }
 
                 }
@@ -202,6 +225,18 @@
                 transition: all 0.2s ease-in;
             }
 
+        }
+    }
+
+    .banner {
+        margin-top: 34px;
+        padding: 13.5px;
+        background-color: $white-background-color;
+        @include border-style();
+
+        img {
+            width: 278px;
+            border-radius: 3px;
         }
     }
 }

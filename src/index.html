@@ -23,10 +23,24 @@
         </div>
 
         <div class="header-nav-right-wrap">
-            <img class="icon-search" src="img/search.png">
+
+            <input id="search-check" type="checkbox">
+
+            <label for="search-check" class="search-input-container">
+
+                <img id="search-btn" class="icon-search" src="img/search.png">
+
+                <input id="header-search-input" type="text" name="search" placeholder="מה תרצה לחפס?" onfocus="this.placeholder = ''"
+                       onblur="this.placeholder = 'מה תרצה לחפס?'">
+            </label>
+
             <img class="icon-pipe" src="img/pipe.png">
             <button class="header-nav-btn-select">
-                <img class="header-nav-btn-icon" src="img/dark_down.png"> ביטוח דירה<img class="chair-icon" src="img/chair.png">
+                <p class="header-nav-btn-text">
+                    <img class="header-nav-btn-icon" src="img/dark_down.png">ביטוח דירה
+                    <img class="chair-icon" src="img/chair.png">
+                </p>
+
             </button>
             <button class="header-nav-btn-comp">Compie</button>
         </div>
@@ -160,8 +174,11 @@
 
                     <ul id="list-type-search" class="search-options-list">
                         <li class="list-item">אופציה 1</li>
+                        <hr>
                         <li class="list-item">אופציה 2</li>
+                        <hr>
                         <li class="list-item">אופציה 3</li>
+                        <hr>
                         <li class="clear-list-item">שום דבר</li>
                     </ul>
 
@@ -192,8 +209,11 @@
 
                     <ul id="list-goal-search" class="search-options-list">
                         <li class="list-item">אופציה 1</li>
+                        <hr>
                         <li class="list-item">אופציה 2</li>
+                        <hr>
                         <li class="list-item">אופציה 3</li>
+                        <hr>
                         <li class="clear-list-item">שום דבר</li>
                     </ul>
 
@@ -208,8 +228,11 @@
 
                         <ul id="list-homeplace-search" class="search-options-list">
                             <li  class="list-item">אופציה 1</li>
+                            <hr>
                             <li  class="list-item">אופציה 2</li>
+                            <hr>
                             <li  class="list-item">אופציה 3</li>
+                            <hr>
                             <li  class="clear-list-item">שום דבר</li>
                         </ul>
 
@@ -313,6 +336,12 @@
                 <img class="brake" src="img/break.png">
 
                 <button class="results-menu-confirm-btn">קבל הצעות</button>
+
+            </div>
+
+            <div class='banner'>
+
+                <img src="../src/img/banner.png">
 
             </div>
 
@@ -769,7 +798,8 @@
             <div class="footer-menu-contacts">
                 <p class="footer-menu-title">השאר מעודכן</p>
                 <p class="footer-menu-text">הירשם לרשימת התפוצה שלנו נדאג לעדכן אותך בכל המידע החשוב.</p>
-                <input type="text" name="e-mail" value="כתובת הדוא``ל שלך" class="footer-mail-input">
+                <input type="text" name="e-mail" placeholder="כתובת הדוא``ל שלך" onfocus="this.placeholder = ''"
+                       onblur="this.placeholder = 'כתובת הדוא``ל שלך'" class="footer-mail-input">
             </div>
 
         </div>
