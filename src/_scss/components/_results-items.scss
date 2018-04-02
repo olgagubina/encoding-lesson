@@ -16,6 +16,7 @@
         background-color: $white-background-color;
 
         &:hover {
+            box-shadow: 0 0 4px $border-color;
             background-color: $blue-hover-background;
             -moz-transition: all 0.3s;
             /* WebKit */
@@ -179,7 +180,6 @@
                     margin: 0 3px 0 0;
                 }
             }
-
         }
     }
 }

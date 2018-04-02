@@ -1,4 +1,5 @@
 .results-menu-container {
+    @include border-style();
     grid-column: 2/span 1;
     grid-row: 1/span 2;
     display:grid;
@@ -8,9 +9,6 @@
     justify-items: start;
     height: 945px;
     width: 307px;
-    @include border-style();
-
-
 
     .results-menu-header {
         @extend %table-header;
@@ -56,6 +54,7 @@
 
             &:hover {
                 background-color: $blue-hover-background;
+                box-shadow: 0 0 4px $border-color;
             }
 
             .btn-text {
@@ -176,6 +175,7 @@
 
                     &:hover input ~ .checkmark {
                         background-color: $blue-hover-background;
+                        box-shadow: 0 0 4px $border-color;
                     }
 
                 }
@@ -229,10 +229,10 @@
     }
 
     .banner {
+        @include border-style();
         margin-top: 34px;
         padding: 13.5px;
         background-color: $white-background-color;
-        @include border-style();
 
         img {
             width: 278px;

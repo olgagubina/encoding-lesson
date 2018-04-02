@@ -30,12 +30,9 @@
         .icon-letter {
             padding: 0 0 0 12px;
         }
-
-
     }
 
     .header-nav-right-wrap {
-        //position: relative;
         display: flex;
         flex-flow: row nowrap;
         justify-content: flex-end;
@@ -46,7 +43,7 @@
         width: 1000px;
 
         #search-check {
-            z-index: -100;
+            display: none;
 
             &:checked ~ .search-input-container {
                 display: flex;
@@ -83,15 +80,6 @@
 
                 #header-search-input {
                     display: none;
-                    direction: $direction;
-                    width: 53%;
-                    border: inherit;
-                    outline: inherit;
-                    font-size: 16px;
-                    font-family: "Arial";
-                    text-align: right;
-                    color: $blue-menu-font-color;
-                    padding: 0 10px 1px 7px;
                 }
             }
         }

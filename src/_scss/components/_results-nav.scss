@@ -10,6 +10,7 @@
 
     .results-nav-message {
         @extend %table-header;
+        width: 100%;
 
         .results-nav-message-text {
             margin: 0;
